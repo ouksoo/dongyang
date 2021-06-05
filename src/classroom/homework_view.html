@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="">
+<link href="../assets/css/common.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.min.css" />
+</head>
+<body>
+
+<!-- qr 코드 -->
+<div class="modal-qr" style="display: none">
+    <a href="#" class="modal-close">닫기</a>
+    <div><img src="../assets/img/class/icon_qr.png" width="100%" /></div>
+</div>
+
+<div class="film-dark" style="display: none"></div>
+<!-- navigation -->
+<aside class="navigation classroom-nav">
+    <div class="nav-top">
+        <a href="#" class="close-nav">close</a>
+        <span class="nav-text"><span>나의 강의실</span></span>
+    </div>
+    <div class="nav-wrap">
+        <div class="gnb">
+            <ul>
+                <li><a href="#" class="g-1">강의 목차</a></li>
+                <li><a href="#" class="g-2">공지사항</a></li>
+                <li><a href="#" class="g-3">강의자료</a></li>
+                <li><a href="#" class="g-4">자유 게시판</a></li>
+                <li><a href="#" class="g-5">Q&A</a></li>
+                <li><a href="#" class="g-6">수강후기</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+
+<div class="wrapper">
+    <!-- header -->
+    <header>
+        <div class="top-logo class-room clearfix">
+            <a href="#" class="logout">logout</a>
+            <h2>나의 강의실</h2>
+            <div class="right-area">
+                <a href="#" class="menu-btn">메뉴</a>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- section -->
+    <section>
+        <div class="classroom-sub">
+            <div class="no-sub-container">
+                <!-- 과제 상세 및 참여 "ASA_0815_PPT61" -->
+                <div class="class-room">
+                    <div class="class-info clearfix">
+                        <span class="f"><img src="../assets/img/class/icon_person.png" alt="" width="58" /></span>
+                        <div class="s">
+                            <ul>
+                                <li>학습 기간 : <span class="text-black">2020.10.21 ~ 2020.10.28</span></li>
+                                <li>나의 진도율 : <span class="text-yellow">75%</span></li>
+                            </ul>
+                        </div>
+                    </div>                    
+                    <div class="exam-info">
+                        <h3>과제방</h3>
+                        <div class="homework">
+                            <table class="notable">
+                            <tbody>
+                                <tr>
+                                    <th>제출기간</th>
+                                    <td>학습 시작전</td>
+                                </tr>
+                                <tr>
+                                    <th>과제명</th>
+                                    <td>과정명 과제</td>
+                                </tr>
+                                <tr>
+                                    <th>내용</th>
+                                    <td>행정안전부 차세대 주민등록정보 시스템 도입에 따라 아래 기간중 주민등록증을 활용한 신분증 진위확인 서비스가 중단됩니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>첨부파일</th>
+                                    <td><a href="#" class="file-link">엔젤세일즈 아카데미.png</a></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        <h3>과제제출</h3>
+                        <div class="homework">
+                            <table class="notable">
+                            <tbody>
+                                <tr>
+                                    <th>제출기간</th>
+                                    <td><input type="text" class="input-normal" /></td>
+                                </tr>
+                                <tr>
+                                    <th>과제명</th>
+                                    <td>2020.10.24 14:44</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        <p class="guide-text">한글/워드 등에서 콘텐츠를 복사해올 경우 내용 용량 초과로 글 등록시 오류가 발생할 수 있습니다.</p>
+                        <div class="editor-container">
+                            <!-- editor 영역 -->
+                        </div>
+                        <div class="homework-list">
+                            <div class="guide-extend clearfix">
+                                <div class="f">
+                                    ※ 업로드 가능 확장자 :<br />
+                                    jpg, jpeg, gif, png, pdf, hwp, txt, doc, docx, xls, 
+                                    ppt, zip, 7z, rar, egg, mp3 에디터에 삽입된 
+                                    파일을 삭제 하면 정상 출력 되지 않습니다.
+                                </div>
+                                <span class="s"><a href="#" class="btn-normal icon upload blue">업로드</a></span>
+                            </div>
+                            <table class="notable">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>파일명</th>
+                                    <th>등록일</th>
+                                    <th>관리</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>엔젤아카데미.png</td>
+                                    <td>2020.10.23</td>
+                                    <td><a href="#" class="btn-normal">삭제</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>엔젤아카데미.png</td>
+                                    <td>2020.10.23</td>
+                                    <td><a href="#" class="btn-normal">삭제</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>엔젤아카데미.png</td>
+                                    <td>2020.10.23</td>
+                                    <td><a href="#" class="btn-normal">삭제</a></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                            <div class="clearfix btn-area">
+                                <a href="#" class="list btn-normal">목록</a><a href="#" class="modify btn-normal blue">수정</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //과제 상세 및 참여 -->
+            </div>
+        </div>
+    </section>
+    <!-- //section -->
+
+    <!-- footer -->
+    <footer>
+        <span class="footer-logo"></span>
+        <p class="address">(우) 01359  서울특별시 종로구 종로 33<br />Tel : 02.3319.757~8</p>
+        <a href="#" class="go-top">Top</a>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/global.js"></script>
+<script src="../assets/js/custom.js"></script>
+</body>
+</html>

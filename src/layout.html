@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="">
+<meta name="format-detection" content="telephone=no" />
+<link href="assets/css/common.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.0/css/swiper.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.min.css" />
+</head>
+<body>
+
+<!-- 공유하기 모달 "ASA_010_PPT14" -->
+<div class="modal-wrapper" style="display: none">
+    <a href="#" class="modal-close">닫기</a>
+    <ul class="clearfix">
+        <li><a href="#" class="email">e-mail</a></li>
+        <li><a href="#" class="kakao">카카오톡</a></li>
+    </ul>
+</div>
+
+<!-- 메모하기 모달 "ASA_010_PPT16" -->
+<div class="modal-wrapper" style="display: none">
+    <a href="#" class="modal-close">닫기</a>
+    <h3>MEMO</h3>
+    <p class="memo-subject">꿈을 숫자로 만드는 과정</p><!-- 제목이 있는 메모의 제목 -->
+    <div class="modal-content">
+        <textarea placeholder="메모를 입력해주세요."></textarea>
+    </div>
+    <div class="btn-area">
+        <a href="#" class="board-btn">삭제</a><a href="#" class="board-btn blue">저장</a>
+    </div>
+</div>
+
+<!-- 검색결과 "ASA_070_PPT42" -->
+<div class="total-search" style="display: none">
+    <div class="search-area">
+        <div class="search-input"><input type="text" placeholder="검색어" /></div>
+        <a href="#" class="search-btn">검색</a>
+    </div>
+    <div class="recommand-tag">
+        <h2>추천 검색 태그</h2>
+        <ul class="tag-list">
+            <li><span class="num">01</span><a href="#">보장설계</a></li>
+            <li><span class="num">02</span><a href="#">연금 설계</a></li>
+            <li><span class="num">03</span><a href="#">재무 설계</a></li>
+            <li><span class="num">04</span><a href="#">종신 보험</a></li>
+            <li><span class="num">05</span><a href="#">보장성 보험</a></li>
+        </ul>
+        <div class="text-right p-t-8">
+            <a href="#" class="close-search">닫기</a>
+        </div>
+    </div>
+</div>
+
+<div class="film-dark" style="display: none"></div>
+<!-- navigation -->
+<aside class="navigation">
+    <div class="nav-top">
+        <a href="#" class="close-nav">close</a>
+        <span class="nav-text"><span>김엔젤님</span>, 안녕하세요</span>
+    </div>
+    <div class="nav-wrap">
+        <div class="gnb">
+            <ul>
+                <li><a href="#" class="g-1 on">데일리 수호천사</a></li>
+                <li><a href="#" class="g-2">영상관</a></li>
+                <li><a href="#" class="g-3">학습관</a></li>
+                <li><a href="#" class="g-4">Live 관</a></li>
+                <li><a href="#" class="g-5">상품관</a></li>
+                <li><a href="#" class="g-6">교재관</a></li>
+                <li><a href="#" class="g-7">게시판</a></li>
+                <li><a href="#" class="g-8 c">마이페이지</a></li>
+                <li><a href="#" class="g-9 c">로그인</a></li>
+                <li><a href="#" class="g-10 c">통합검색</a></li>
+                <li><a href="#" class="g-11 c">강의실</a></li>
+            </ul>
+        </div>
+        <div class="sub">
+            <!-- depth -1 -->
+            <ul class="sub-depth-1">
+                <li><a href="#" class="on">차월별 SLC</a></li>
+                <li><a href="#">주간 Live</a></li>
+                <li><a href="#">강연부문별</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+
+<div class="wrapper">
+    <!-- header -->
+    <header>
+        <div class="top-logo clearfix">
+            <h1></h1>
+            <div class="right-area">
+                <a href="#" class="search-btn">검색</a><a href="#" class="menu-btn">메뉴</a>
+            </div>
+        </div>
+        <div class="gnb-menus">
+            <ul class="swiper-wrapper tabs">
+                <li class="swiper-slide"><a href="#">데일리 수호천사</a></li>
+                <li class="swiper-slide"><a href="#">영상관</a></li>
+                <li class="swiper-slide"><a href="#">학습관</a></li>
+                <li class="swiper-slide"><a href="#">Live관</a></li>
+                <li class="swiper-slide"><a href="#">상품관</a></li>
+                <li class="swiper-slide"><a href="#">교재관</a></li>
+                <li class="swiper-slide"><a href="#">게시판</a></li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="sub-menus">
+            <ul class="swiper-wrapper tabs">
+                <li class="swiper-slide"><a href="#">차월별 SLC</a></li>
+                <li class="swiper-slide"><a href="#">주간 Live</a></li>
+                <li class="swiper-slide"><a href="#">강연부문별</a></li>
+                <li class="swiper-slide"><a href="#">Study 메니저</a></li>
+                <li class="swiper-slide"><a href="#">SUBMENU-5</a></li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- section -->
+    <section>
+        <!-- Slider main container -->
+        <div class="swiper-container" id="sectionSliderWrapper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" data-gnb="0" data-sub="0">
+                    <div class="section-inner">
+                        <!-- 글 목록 "ASA_030_PPT20" -->
+                        <div class="search-wrapper clearfix">
+                            <div class="floatl f">
+                                <select>
+                                    <option>전체</option>
+                                </select>
+                            </div>
+                            <div class="floatl s">
+                                <input type="text" class="input-form nude w-90-per" placeholder="검색어 입력" />
+                                <a href="#" class="btn-find">찾기</a>
+                            </div>
+                        </div>
+                        <div class="list-normal-wrap">
+                            <div class="list-top clearfix">
+                                <span class="floatl"><span class="text-blue">122개</span>의 게시물</span>
+                                <span class="floatr"><a href="#" class="btn-normal icon write">글쓰기</a></span>
+                            </div>
+                            <ul class="board-list">
+                                <li>
+                                    <a href="#">수호천사 모닝-콜 방송 자료</a>
+                                    <p class="clearfix">
+                                        <span class="name">김엔젤</span>
+                                        <span class="date">2020.09.12 17:43</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#">수호천사 모닝-콜 방송 자료</a>
+                                    <p class="clearfix">
+                                        <span class="name">김엔젤</span>
+                                        <span class="date">2020.09.12 17:43</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#">수호천사 모닝-콜 방송 자료</a>
+                                    <p class="clearfix">
+                                        <span class="name">김엔젤</span>
+                                        <span class="date">2020.09.12 17:43</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="#">수호천사 모닝-콜 방송 자료</a>
+                                    <p class="clearfix">
+                                        <span class="name">김엔젤</span>
+                                        <span class="date">2020.09.12 17:43</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //글 목록 -->
+
+                        <!-- 목록이 없을 경우 -->
+                        <div class="no-board-list" style="display: none">
+                            <p class="board">등록된 게시글이 없습니다.</p>
+                        </div>
+                        <!-- //목록이 없을 경우 -->
+                    </div>
+                </div>
+                <div class="swiper-slide" data-gnb="0" data-sub="1">
+                    <div class="section-inner">
+                        <!-- 방송 카테고리 목록 "ASA_010_PPT10" -->
+                        <div class="normal-list-wrapper">
+                            <ul class="move-list clearfix">
+                                <li>
+                                    <h2>FTC 동영상 강의</h2>
+                                    <div class="screen-wrapper">
+                                        <a href="#" class="btn-play">영상실행</a>
+                                        <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2>BTC 동영상 강의</h2>
+                                    <div class="screen-wrapper">
+                                        <a href="#" class="btn-play">영상실행</a>
+                                        <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2>FTC 동영상 강의</h2>
+                                    <div class="screen-wrapper">
+                                        <a href="#" class="btn-play">영상실행</a>
+                                        <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2>BTC 동영상 강의</h2>
+                                    <div class="screen-wrapper">
+                                        <a href="#" class="btn-play">영상실행</a>
+                                        <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2>FTC 동영상 강의</h2>
+                                    <div class="screen-wrapper">
+                                        <a href="#" class="btn-play">영상실행</a>
+                                        <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <h2>BTC 동영상 강의</h2>
+                                    <div class="screen-wrapper">
+                                        <a href="#" class="btn-play">영상실행</a>
+                                        <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //방송 카테고리 목록 -->
+
+                        <!-- 방송 카테고리 목록이 없을 경우 -->
+                        <div class="no-board-list" style="display: none">
+                            <p class="screen">등록된 방송이 없습니다.</p>
+                        </div>
+                        <!-- //방송 카테고리 목록이 없을 경우 -->
+                    </div>
+                </div>
+                <div class="swiper-slide" data-gnb="0" data-sub="2">
+                    <div class="section-inner">
+                        <!-- 방송 카테고리 목록 "ASA_012_PPT12" -->
+                        <div class="list-normal-wrap">
+                            <div class="list-top alone clearfix">
+                                <span class="floatl"><span class="text-blue">122개</span>의 게시물</span>
+                            </div>
+                            <ul class="thumb-list">
+                                <li class="clearfix">
+                                    <div class="f">
+                                        <div class="screen-wrapper">
+                                            <a href="#" class="btn-play">영상실행</a>
+                                            <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="s">
+                                        <span class="time">50:21</span>
+                                        <p class="subject">06. 치매의 두 그림자</p>
+                                        <div class="infos">
+                                            <a href="#" class="heart on line-pink">&nbsp;</a>
+                                            <a href="#" class="like line-blue txt-blue">150</a>
+                                            <a href="#" class="view off line-gray txt-gray">시청하기</a>
+                                            <!--
+                                                .heart (on, off)
+                                                .like
+                                                .view (on, off)
+                                                .line-pink, .line-blue, .line-gray
+                                                .txt-pink, .txt-blue, .txt-gray
+                                            -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="f">
+                                        <div class="screen-wrapper">
+                                            <a href="#" class="btn-play">영상실행</a>
+                                            <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="s">
+                                        <span class="time">50:21</span>
+                                        <p class="subject">06. 치매의 두 그림자</p>
+                                        <div class="infos">
+                                            <a href="#" class="heart off line-pink">&nbsp;</a>
+                                            <a href="#" class="like line-gray txt-gray">150</a>
+                                            <a href="#" class="view on line-blue txt-blue">시청하기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="f">
+                                        <div class="screen-wrapper">
+                                            <a href="#" class="btn-play">영상실행</a>
+                                            <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="s">
+                                        <span class="time">50:21</span>
+                                        <p class="subject">06. 치매의 두 그림자</p>
+                                        <div class="infos">
+                                            <a href="#" class="heart on line-pink">&nbsp;</a>
+                                            <a href="#" class="like line-blue txt-blue">150</a>
+                                            <a href="#" class="view off line-gray txt-gray">시청하기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="f">
+                                        <div class="screen-wrapper">
+                                            <a href="#" class="btn-play">영상실행</a>
+                                            <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="s">
+                                        <span class="time">50:21</span>
+                                        <p class="subject">06. 치매의 두 그림자</p>
+                                        <div class="infos">
+                                            <a href="#" class="heart on line-pink">&nbsp;</a>
+                                            <a href="#" class="like line-blue txt-blue">150</a>
+                                            <a href="#" class="view off line-gray txt-gray">시청하기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //방송 카테고리 목록 -->
+                    </div>
+                </div>
+                <div class="swiper-slide" data-gnb="0" data-sub="3">
+                    <div class="section-inner">
+                        <!-- 방송 상세 "ASA_013_PPT13" -->
+                        <div class="normal-list-wrapper clearfix">
+                            <ul class="move-list">
+                                <li class="not-float">
+                                    <a href="#" class="go-back">뒤로가기</a>
+                                    <div class="screen-wrapper">
+                                        <a href="#" class="btn-play">영상실행</a>
+                                        <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="normal-detail-wrapper">
+                            <div class="detail-top clearfix">
+                                <span class="subject">06. 정보보호팀</span>
+                                <span class="date">방송일 : 2020.09.22</span>
+                            </div>
+                            <div class="file">
+                                <a href="#">수호천사 모닝-콜 방송자료.pdf</a>
+                            </div>
+                            <div class="detail-content">
+                                - 2020 상반기 보안결산<br />
+                                - 재택근무 정보보호<br />
+                                - 물리적 망분리
+                            </div>
+                            <div class="tags">
+                                <ul class="clearfix">
+                                    <li><a href="#">#보안</a></li>
+                                    <li><a href="#">#전산</a></li>
+                                    <li><a href="#">#서약</a></li>
+                                    <li><a href="#">#근면,철저</a></li>
+                                    <li><a href="#">#기초사항</a></li>
+                                </ul>
+                            </div>
+                            <div class="functions">
+                                <a href="#" class="share">공유</a><a href="#" class="like"><img src="assets/img/icons/icon_like_big.png"> 21</a><a href="#" class="heart">사랑해요</a><a href="#" class="write">글쓰기</a>
+                            </div>
+                        </div>
+                        
+                        <div class="list-normal-wrap">
+                            <h2>연관 콘텐츠</h2>
+                            <ul class="thumb-list">
+                                <li class="clearfix">
+                                    <div class="f">
+                                        <div class="screen-wrapper">
+                                            <a href="#" class="btn-play">영상실행</a>
+                                            <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="s">
+                                        <span class="time">50:21</span>
+                                        <p class="subject">06. 치매의 두 그림자</p>
+                                        <div class="infos">
+                                            <a href="#" class="heart on line-pink">&nbsp;</a>
+                                            <a href="#" class="like line-blue txt-blue">150</a>
+                                            <a href="#" class="view off line-gray txt-gray">시청하기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="f">
+                                        <div class="screen-wrapper">
+                                            <a href="#" class="btn-play">영상실행</a>
+                                            <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="s">
+                                        <span class="time">50:21</span>
+                                        <p class="subject">06. 치매의 두 그림자</p>
+                                        <div class="infos">
+                                            <a href="#" class="heart off line-pink">&nbsp;</a>
+                                            <a href="#" class="like line-gray txt-gray">150</a>
+                                            <a href="#" class="view on line-blue txt-blue">시청하기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="f">
+                                        <div class="screen-wrapper">
+                                            <a href="#" class="btn-play">영상실행</a>
+                                            <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="s">
+                                        <span class="time">50:21</span>
+                                        <p class="subject">06. 치매의 두 그림자</p>
+                                        <div class="infos">
+                                            <a href="#" class="heart on line-pink">&nbsp;</a>
+                                            <a href="#" class="like line-blue txt-blue">150</a>
+                                            <a href="#" class="view off line-gray txt-gray">시청하기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="f">
+                                        <div class="screen-wrapper">
+                                            <a href="#" class="btn-play">영상실행</a>
+                                            <img src="assets/img/temp/screen_thumb.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="s">
+                                        <span class="time">50:21</span>
+                                        <p class="subject">06. 치매의 두 그림자</p>
+                                        <div class="infos">
+                                            <a href="#" class="heart on line-pink">&nbsp;</a>
+                                            <a href="#" class="like line-blue txt-blue">150</a>
+                                            <a href="#" class="view off line-gray txt-gray">시청하기</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //방송 상세 -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- //section -->
+
+    <!-- footer -->
+    <footer>
+        <span class="footer-logo"></span>
+        <p class="address">(우) 01359  서울특별시 종로구 종로 33<br />Tel : 02.3319.757~8</p>
+        <a href="#" class="go-top">Top</a>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.1.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/global.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

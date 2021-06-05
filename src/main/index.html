@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="">
+<link href="../assets/css/common.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.min.css" />
+</head>
+<body>
+
+<!-- 메인광고 -->
+<div class="popup-adver" style="display: none">
+    <div>
+        <a href="#"><img src="../assets/img/layout/main_popup.png" alt="" width="100%" /></a>
+    </div>
+    <div class="clearfix cont">
+        <span class="never-open">
+            <span class="radiobox-default popup">
+                <input type="radio" id="m1" name="m1" /><label for="m1"><span></span>&nbsp;다시 열지 않음</label>
+            </span>
+        </span>
+        <a href="#">닫기</a>
+    </div>
+</div>
+
+<!-- 검색결과 "ASA_070_PPT42" -->
+<div class="total-search" style="display: none">
+    <div class="search-area">
+        <div class="search-input"><input type="text" placeholder="검색어" /></div>
+        <a href="#" class="search-btn">검색</a>
+    </div>
+    <div class="recommand-tag">
+        <h2>추천 검색 태그</h2>
+        <ul class="tag-list">
+            <li><span class="num">01</span><a href="#">보장설계</a></li>
+            <li><span class="num">02</span><a href="#">연금 설계</a></li>
+            <li><span class="num">03</span><a href="#">재무 설계</a></li>
+            <li><span class="num">04</span><a href="#">종신 보험</a></li>
+            <li><span class="num">05</span><a href="#">보장성 보험</a></li>
+        </ul>
+        <div class="text-right p-t-8">
+            <a href="#" class="close-search">닫기</a>
+        </div>
+    </div>
+</div>
+
+<div class="film-dark" style="display: "></div>
+<!-- navigation -->
+<aside class="navigation">
+    <div class="nav-top">
+        <a href="#" class="close-nav">close</a>
+        <span class="nav-text"><span>김엔젤님</span>, 안녕하세요</span>
+    </div>
+    <div class="nav-wrap">
+        <div class="gnb">
+            <ul>
+                <li><a href="#" class="g-1 on">데일리 수호천사</a></li>
+                <li><a href="#" class="g-2">영상관</a></li>
+                <li><a href="#" class="g-3">학습관</a></li>
+                <li><a href="#" class="g-4">Live 관</a></li>
+                <li><a href="#" class="g-5">상품관</a></li>
+                <li><a href="#" class="g-6">교재관</a></li>
+                <li><a href="#" class="g-7">게시판</a></li>
+                <li><a href="#" class="g-8 c">마이페이지</a></li>
+                <li><a href="#" class="g-9 c">로그인</a></li>
+                <li><a href="#" class="g-10 c">통합검색</a></li>
+                <li><a href="#" class="g-11 c">강의실</a></li>
+            </ul>
+        </div>
+        <div class="sub">
+            <!-- depth -1 -->
+            <ul class="sub-depth-1">
+                <li><a href="#" class="on">차월별 SLC</a></li>
+                <li><a href="#">주간 Live</a></li>
+                <li><a href="#">강연부문별</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+
+<div class="wrapper">
+    <!-- header -->
+    <header class="main-header">
+        <div class="top-logo clearfix">
+            <h1></h1>
+            <a href="#" class="btn-live">Live</a>
+            <div class="right-area">
+                <a href="#" class="push-history new">알림함</a><a href="#" class="search-btn">검색</a><a href="#" class="menu-btn">메뉴</a>
+            </div>
+        </div>
+        <div class="main-gnb">
+            <ul class="clearfix">
+                <li><a href="#">데일리 수호천사</a></li>
+                <li><a href="#">영상관</a></li>
+                <li><a href="#">학습관</a></li>
+                <li><a href="#">Live관</a></li>
+                <li><a href="#">상품관</a></li>
+                <li><a href="#">교재관</a></li>
+                <li><a href="#">게시판</a></li>
+            </ul>
+        </div>
+        <div class="install-app">
+            <p>엔젤 세일즈 아카데미를 더 간편하게 이용할 수 있어요! <span>앱설치</span></p>
+            <a href="#" class="close-app">닫기</a>
+        </div>
+        <div class="personal-info clearfix">
+            <div class="info-wrap">
+                <div class="left">
+                    <div class="graph-info">
+                        <span class="tit">진도율</span>
+                        <span class="percent">100<sub>%</sub></span>
+                    </div>
+                    <div class="chart">
+                        <div id="canvas-holder" style="width:100px; height: 100px">
+                            <canvas id="chart-area" width="100" height="100"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="infos">
+                    <a href="#" class="go-mypage">마이페이지</a>
+                    <p class="name"><strong>김엔젤님,</strong> 안녕하세요</p>
+                    <p class="class">수강중 : 2과목 (수강완료:3과목)</p>
+                    <p class="point">포인트 : <span class="p">1,790P</span></p>
+                    <span class="c">이전접속 : 20.09.14 18:24:23</span>
+                </div>
+            </div>
+            <a herf="#" class="open-personal"><strong>김엔젤님,</strong> 안녕하세요<span></span></a>
+            <a herf="#" class="close-personal"><span></span></a>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <div class="main-section-wrapper clearfix">
+        <!-- section -->
+        <section class="main-tablet">
+            <div class="index-wrapper">
+                <div class="no-main-container clearfix"><!-- 엡설치를 안할시에 "off" 클레스 추가 -->
+                    <div class="main-box-color normal onair-card" style="display: none">
+                        <div class="inner-box on-air-box">
+                            <a href="#" class="close-onair">닫기</a>
+                            <h2><span class="text">Live 방송 <span class="on-air-tit">ON AIR</span></span></h2>
+                            <p class="on-air-list">
+                                <span>Live</span><a href="#">12월 성공적인 엔젤투자 유치 실무 교육</a>
+                            </p>
+                            <a href="#" class="play-now">시청하기</a>
+                        </div>
+                    </div>
+                    
+                    <div class="main-box-color">
+                        <div class="inner-box">
+                            <h2><span class="text">굿모닝! 수호천사</span><span class="date">2020.09.15</span></h2>
+                            <div class="screen-wrapper">
+                                <a href="#" class="btn-play">영상실행</a>
+                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                            </div>
+                            <h2><span class="text">Today’s <span class="c">HOT추천!</span></span></h2>
+                            <div class="coverflow-wrapper">
+                                <div class="effect-coverflow">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-box-color normal">
+                        <div class="inner-box nope">
+                            <h2 class="b"><span class="text">주간 Live 강연</span></h2>
+                            <div class="screen-wrapper">
+                                <a href="#" class="btn-play">영상실행</a>
+                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                            </div>
+                            <h2 class="b"><span class="text">상품관</span></h2>
+                            <div class="coverflow-wrapper">
+                                <div class="effect-coverflow">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="screen-wrapper">
+                                                <a href="#" class="btn-play">영상실행</a>
+                                                <img src="../assets/img/temp/screen_thumb.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section -->
+
+        <div class="main-footer-info">
+            <a herf="#" class="open-essential"><span>엔젤 에센셜</span></a>
+            <!--<p class="alram">알림 영역 입니다. 없을경우 해당영역 히든 처리바랍니다.</p>-->
+            <div class="footer-tabs tab-btns">
+                <a href="#" class="on" data-id="1">공지사항</a><a href="#" data-id="2">주간방송 편성</a><a href="#" data-id="3">공시이율/증권</a>
+            </div>
+            <div class="notice-list tabs tabid-1">
+                <h3>공지사항<a href="#" class="mores">더보기</a></h3>
+                <ul class="semi-list">
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">9/13</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">9/13</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">9/13</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">9/13</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">9/13</span>
+                    </li>
+                </ul>
+                <a href="#" class="btn-bottom">전체 목록 <img src="../assets/img/icons/icon_arrow_right_gray.png" width="6" alt="" /></a>  
+            </div>
+            <div class="broadcast-list tabs tabid-2" style="display: none">
+                <h3>주간 방송 편성<a href="#" class="mores">더보기</a></h3>
+                <ul class="semi-list">
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">9/13</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">9/13</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">9/13</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">9/13</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">9/13</span>
+                    </li>
+                </ul>
+                <a href="#" class="btn-bottom">전체 편성표 <img src="../assets/img/icons/icon_arrow_right_gray.png" width="6" alt="" /></a>
+            </div>
+            <div class="stock-list tabs tabid-3" style="display: none">
+                <p class="clearfix stock-tit">
+                    <span class="tt">공시이율<span>・증권</span></span>
+                    <span class="date">2020년 9월 기준</span>
+                </p>
+                <ul class="semi-list stock">
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">1.35%</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">2.22%</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">0.13%</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="f"><a href="#">고객의 마음을 사로잡는 화술</a></span>
+                        <span class="s">0.13%</span>
+                    </li>
+                </ul>
+                <p class="clearfix stock-tit mo">
+                    <span class="tt">증권번호</span>
+                </p>
+                <div class="clearfix stock-info">
+                    <span class="f down">
+                        <span class="s-a">KOSPI</span>
+                        <span class="s-b">2,423.40</span>
+                        <span class="s-c"><sub>0.85</sub></span>
+                    </span>
+                    <span class="s up">
+                        <span class="s-a">KOSDAQ</span>
+                        <span class="s-b">2,423.40</span>
+                        <span class="s-c"><sub>0.85</sub></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="index-footer">
+        <span class="footer-logo"></span>
+        <p class="address">(우) 01359  서울특별시 종로구 종로 33<br />Tel : 02.3319.757~8</p>
+        <a href="#" class="go-top">Top</a>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/global.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script>
+// 그래프
+var configMyProcess = {
+    type: 'doughnut',
+    data: {
+        datasets: [{
+            data: [40, 60], //[진행율, 남은율]
+            backgroundColor: ["#ffd200","#0785b6"],
+            borderWidth: 0,
+            weight: 2,
+        }]
+    },
+    options: {
+        responsive: true,
+        legend: false,
+        title: {
+            display: false,
+        },
+        animation: {
+            animateScale: false,
+            animateRotate: false
+        },
+        cutoutPercentage: 70
+    }
+};
+
+var ctx = document.getElementById('chart-area').getContext('2d');
+window.classProgress = new Chart(ctx, configMyProcess);		
+</script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="">
+<link href="../assets/css/common.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.min.css" />
+</head>
+<body>
+
+<!-- 공유하기 모달 "ASA_010_PPT14" -->
+<div class="modal-wrapper" style="display: none">
+    <a href="#" class="modal-close">닫기</a>
+    <ul class="clearfix">
+        <li><a href="#" class="email">e-mail</a></li>
+        <li><a href="#" class="kakao">카카오톡</a></li>
+    </ul>
+</div>
+
+<!-- 메모하기 모달 "ASA_010_PPT16" -->
+<div class="modal-wrapper" style="display: none">
+    <a href="#" class="modal-close">닫기</a>
+    <h3>MEMO</h3>
+    <p class="memo-subject">꿈을 숫자로 만드는 과정</p><!-- 제목이 있는 메모의 제목 -->
+    <div class="modal-content">
+        <textarea placeholder="메모를 입력해주세요."></textarea>
+    </div>
+    <div class="btn-area">
+        <a href="#" class="board-btn">삭제</a><a href="#" class="board-btn blue">저장</a>
+    </div>
+</div>
+
+<!-- 검색결과 "ASA_070_PPT42" -->
+<div class="total-search" style="display: none">
+    <div class="search-area">
+        <div class="search-input"><input type="text" placeholder="검색어" /></div>
+        <a href="#" class="search-btn">검색</a>
+    </div>
+    <div class="recommand-tag">
+        <h2>추천 검색 태그</h2>
+        <ul class="tag-list">
+            <li><span class="num">01</span><a href="#">보장설계</a></li>
+            <li><span class="num">02</span><a href="#">연금 설계</a></li>
+            <li><span class="num">03</span><a href="#">재무 설계</a></li>
+            <li><span class="num">04</span><a href="#">종신 보험</a></li>
+            <li><span class="num">05</span><a href="#">보장성 보험</a></li>
+        </ul>
+        <div class="text-right p-t-8">
+            <a href="#" class="close-search">닫기</a>
+        </div>
+    </div>
+</div>
+
+<div class="film-dark" style="display: none"></div>
+<!-- navigation -->
+<aside class="navigation">
+    <div class="nav-top">
+        <a href="#" class="close-nav">close</a>
+        <span class="nav-text"><span>김엔젤님</span>, 안녕하세요</span>
+    </div>
+    <div class="nav-wrap">
+        <div class="gnb">
+            <ul>
+                <li><a href="#" class="g-1 on">데일리 수호천사</a></li>
+                <li><a href="#" class="g-2">영상관</a></li>
+                <li><a href="#" class="g-3">학습관</a></li>
+                <li><a href="#" class="g-4">Live 관</a></li>
+                <li><a href="#" class="g-5">상품관</a></li>
+                <li><a href="#" class="g-6">교재관</a></li>
+                <li><a href="#" class="g-7">게시판</a></li>
+                <li><a href="#" class="g-8 c">마이페이지</a></li>
+                <li><a href="#" class="g-9 c">로그인</a></li>
+                <li><a href="#" class="g-10 c">통합검색</a></li>
+                <li><a href="#" class="g-11 c">강의실</a></li>
+            </ul>
+        </div>
+        <div class="sub">
+            <!-- depth -1 -->
+            <ul class="sub-depth-1">
+                <li><a href="#" class="on">차월별 SLC</a></li>
+                <li><a href="#">주간 Live</a></li>
+                <li><a href="#">강연부문별</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+
+<div class="wrapper">
+    <!-- header -->
+    <header>
+        <div class="top-logo clearfix">
+            <h1></h1>
+            <div class="right-area">
+                <a href="#" class="search-btn">검색</a><a href="#" class="menu-btn">메뉴</a>
+            </div>
+        </div>
+        <div class="gnb-menus">
+            <ul class="swiper-wrapper tabs">
+                <li class="swiper-slide"><a href="#">데일리 수호천사</a></li>
+                <li class="swiper-slide"><a href="#">영상관</a></li>
+                <li class="swiper-slide"><a href="#">학습관</a></li>
+                <li class="swiper-slide"><a href="#">Live관</a></li>
+                <li class="swiper-slide"><a href="#">상품관</a></li>
+                <li class="swiper-slide"><a href="#">교재관</a></li>
+                <li class="swiper-slide"><a href="#">게시판</a></li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="sub-menus">
+            <ul class="swiper-wrapper tabs">
+                <li class="swiper-slide"><a href="#">차월별 SLC</a></li>
+                <li class="swiper-slide"><a href="#">주간 Live</a></li>
+                <li class="swiper-slide"><a href="#">강연부문별</a></li>
+                <li class="swiper-slide"><a href="#">Study 메니저</a></li>
+                <li class="swiper-slide"><a href="#">SUBMENU-5</a></li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- section -->
+    <section>
+        <!-- Slider main container -->
+        <div class="swiper-container" id="sectionSliderWrapper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" data-gnb="0" data-sub="7">
+                    <div class="section-inner">
+                        <!-- 월간 교육 일정 "ASA_044_PPT29" -->
+                        <div class="list-normal-wrap">
+                            <div class="list-top clearfix bd-0">
+                                <span class="month-wrap"><a hre="#" class="prev-month">이전달</a> 2020년 <span class="this-month">10월</span> <a hre="#" class="next-month">다음달</a></span>
+                                <span class="floatr"><a href="#" class="btn-normal icon time">Today</a></span>
+                            </div>
+                            <div class="calender">
+                                <table class="notable">
+                                <thead>
+                                    <tr>
+                                        <th>일</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td class="h-schedule">10<span class="dot"></span></td>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td class="h-schedule">17<span class="dot"></span></td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                            <div class="schedule-detail-wrap">
+                                <div class="has-schedule">
+                                    <span class="subject">2020 스마트 경제 백서</span>
+                                    <div class="schedule-detail">
+                                        <span class="date">2020.10.10 ~ 2020.10.18</span>
+                                        <p class="detail">
+                                            기존 보험계약을 해지하고 다른 보험계약을 체결시 보험인수 
+                                            거절 또는 보험료 인상, 보장내용이 달라질 수 있습니다. 
+                                            이 보험계약은 예금자보호법에 따라 예금보험공사가 보호하되, 
+                                            보호 한도는 본 보험회사에 있는 귀하의 모든 예금보호 대상 
+                                            금융상품의 해지환급금(또는 만기 시 보험금이나 사고보험금)
+                                            에 기타 지급금을 합하여 1인당 최고 5천만원이며, 5천만원을 
+                                            초과하는 나머지 금액은 보호하지 않습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- 일정이 리스트가 없을 경우 -->
+                                <div class="no-board-list" style="display: none">
+                                    <p class="schedule">등록된 일정이 없습니다.</p>
+                                </div>
+                                <!-- //일정이 없을 경우 -->
+                            </div>
+                        </div>
+                        <!-- //월간 교육 일정 -->
+                    </div>
+                </div>
+                
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- //section -->
+
+    <!-- footer -->
+    <footer>
+        <span class="footer-logo"></span>
+        <p class="address">(우) 01359  서울특별시 종로구 종로 33<br />Tel : 02.3319.757~8</p>
+        <a href="#" class="go-top">Top</a>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/global.js"></script>
+<script src="../assets/js/custom.js"></script>
+</body>
+</html>

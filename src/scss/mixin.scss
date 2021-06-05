@@ -1,0 +1,69 @@
+/********************** 
+* mixins
+***********************/
+$screen-xs-min: 320px;
+$screen-sm-min: 544px;
+$screen-md-min: 768px;
+$screen-lg-min: 1024px;
+
+$screen-breakpoint900: 900px;
+$screen-breakpoint: 1200px;
+
+@mixin breakpointmin($media) {
+    @if $media == xs {
+        @media only screen and (min-width: $screen-xs-min) {
+            @content;
+        }
+    }
+    @else if $media == sm {
+        @media only screen and (min-width: $screen-sm-min) {
+            @content;
+        }
+    }
+    @else if $media == md {
+        @media only screen and (min-width: $screen-md-min) {
+            @content;
+        }
+    }
+    @else if $media == lg {
+        @media only screen and (min-width: $screen-lg-min) {
+            @content;
+        }
+    }
+    @else  if $media == mid {
+        @media only screen and (min-width: $screen-breakpoint900) {
+            @content;
+        }
+    }
+    @else  if $media == max {
+        @media only screen and (min-width: $screen-breakpoint) {
+            @content;
+        }
+    }
+}
+
+// @include breakpointmin(max) {
+//     float: left;
+//     width: 50%;
+// }
+
+@mixin breakpointmax($media) {
+    @if $media = max {
+        @media only screen and (max-width: $screen-breakpoint) {
+            @content;
+        }
+    }
+}
+
+@mixin prefix($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+@mixin ellips {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="">
+<link href="../assets/css/common.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.min.css" />
+</head>
+<body>
+
+<!-- qr 코드 -->
+<div class="modal-qr" style="display: none">
+    <div class="qrcode">
+        <span><img src="../assets/img/class/icon_qr.png" width="80" /></span>
+    </div>
+    <p class="infos">
+        출석 담당자에게 QR코드를 보여 주세요.<br />
+        <span>00:00까지 유효 합니다.</span>
+    </p>
+    <a href="#" class="modal-close-qr">닫기</a>
+</div>
+
+<div class="film-dark" style="display: none"></div>
+<!-- navigation -->
+<aside class="navigation classroom-nav">
+    <div class="nav-top">
+        <a href="#" class="close-nav">close</a>
+        <span class="nav-text"><span>나의 강의실</span></span>
+    </div>
+    <div class="nav-wrap">
+        <div class="gnb">
+            <ul>
+                <li><a href="#" class="g-1">강의 목차</a></li>
+                <li><a href="#" class="g-2">공지사항</a></li>
+                <li><a href="#" class="g-3">강의자료</a></li>
+                <li><a href="#" class="g-4">자유 게시판</a></li>
+                <li><a href="#" class="g-5">Q&A</a></li>
+                <li><a href="#" class="g-6">수강후기</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+
+<div class="wrapper">
+    <!-- header -->
+    <header>
+        <div class="top-logo class-room clearfix">
+            <a href="#" class="logout">logout</a>
+            <h2>나의 강의실</h2>
+            <div class="right-area">
+                <a href="#" class="menu-btn">메뉴</a>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- section -->
+    <section>
+        <div class="classroom-sub">
+            <div class="no-sub-container">
+                <!-- QR코드 생성 "ASA_081_PPT47,ASA_082_PPT48(사이드메뉴)" -->
+                <div class="class-room">
+                    <h2 class="header">강의 목차</h2>
+                    <ul class="default-list">
+                        <li class="clearfix">
+                            <div class="left">
+                                <p class="t-1">1차시<span class="status completed">완료</span>01.엔젤아카데미 과정 1차시</p>
+                                <p class="t-2">2020.10.22 00:00 ~ 13:00</p>
+                            </div>
+                            <div class="right"><img src="../assets/img/icons/icon_qr_btn.png" alt="" width="34" class="qr-code" /></div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="left">
+                                <p class="t-1">1차시<span class="status hold">대기</span>01.엔젤아카데미 과정 1차시</p>
+                                <p class="t-2">2020.10.22 00:00 ~ 13:00</p>
+                            </div>
+                            <div class="right"><img src="../assets/img/icons/icon_qr_btn.png" alt="" width="34" class="qr-code" /></div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="left">
+                                <p class="t-1">1차시<span class="status going">학습중</span>01.엔젤아카데미 과정 1차시</p>
+                                <p class="t-2">2020.10.22 00:00 ~ 13:00</p>
+                            </div>
+                            <div class="right"><img src="../assets/img/icons/icon_qr_btn.png" alt="" width="34" class="qr-code" /></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //QR코드 생성 (메뉴별) -->
+            </div>
+        </div>
+    </section>
+    <!-- //section -->
+
+    <!-- footer -->
+    <footer>
+        <span class="footer-logo"></span>
+        <p class="address">(우) 01359  서울특별시 종로구 종로 33<br />Tel : 02.3319.757~8</p>
+        <a href="#" class="go-top">Top</a>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/global.js"></script>
+<script src="../assets/js/custom.js"></script>
+</body>
+</html>

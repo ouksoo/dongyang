@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="">
+<link href="../assets/css/common.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.min.css" />
+</head>
+<body>
+
+<!-- qr 코드 -->
+<div class="modal-qr" style="display: none">
+    <a href="#" class="modal-close">닫기</a>
+    <div><img src="../assets/img/class/icon_qr.png" width="100%" /></div>
+</div>
+
+<div class="film-dark" style="display: none"></div>
+<!-- navigation -->
+<aside class="navigation classroom-nav">
+    <div class="nav-top">
+        <a href="#" class="close-nav">close</a>
+        <span class="nav-text"><span>나의 강의실</span></span>
+    </div>
+    <div class="nav-wrap">
+        <div class="gnb">
+            <ul>
+                <li><a href="#" class="g-1">강의 목차</a></li>
+                <li><a href="#" class="g-2">공지사항</a></li>
+                <li><a href="#" class="g-3">강의자료</a></li>
+                <li><a href="#" class="g-4">자유 게시판</a></li>
+                <li><a href="#" class="g-5">Q&A</a></li>
+                <li><a href="#" class="g-6">수강후기</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+
+<div class="wrapper">
+    <!-- header -->
+    <header>
+        <div class="top-logo class-room clearfix">
+            <a href="#" class="logout">logout</a>
+            <h2>나의 강의실</h2>
+            <div class="right-area">
+                <a href="#" class="menu-btn">메뉴</a>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- section -->
+    <section>
+        <div class="classroom-sub">
+            <div class="no-sub-container">
+                <!-- 설문 상세 및 참여 "ASA_089_PPT55" -->
+                <div class="class-room">
+                    <div class="class-info clearfix">
+                        <span class="f"><img src="../assets/img/class/icon_person.png" alt="" width="58" /></span>
+                        <div class="s">
+                            <ul>
+                                <li>학습 기간 : <span class="text-black">2020.10.21 ~ 2020.10.28</span></li>
+                                <li>나의 진도율 : <span class="text-yellow">75%</span></li>
+                            </ul>
+                        </div>
+                    </div>                    
+                    <div class="exam-info">
+                        <h3>설문</h3>
+                        <div class="homework bd-b10">
+                            <table class="notable">
+                            <tbody>
+                                <tr>
+                                    <th>제목</th>
+                                    <td>동양생명보험은 개인정보처리방침 등의 변경</td>
+                                </tr>
+                                <tr>
+                                    <th>내용</th>
+                                    <td>행정안전부 차세대 주민등록정보 시스템 도입에 따라 아래 기간중 주민등록증을 활용한 신분증 진위확인 서비스가 중단됩니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>설문 기간</th>
+                                    <td>2020.10.28 ~ 2020.10.31</td>
+                                </tr>
+                                <tr>
+                                    <th>문항수</th>
+                                    <td>3문항</td>
+                                </tr>
+                                <tr>
+                                    <th>상태</th>
+                                    <td>진행중</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        <h3>설문 참여</h3>
+                        <div class="homework">
+                            <ul class="survey-list">
+                                <li>
+                                    <h4><span>Q1.</span> 서술 하시오.1</h4>
+                                    <div class="inner-survey">
+                                        <textarea placeholder="여기에 답안을 입력 하세요."></textarea>
+                                        <span class="data">24/60,000 byte(s)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4><span>Q2.</span> 호응도 조사입니다.</h4>
+                                    <div class="inner-survey">
+                                        <input type="text" class="input-normal w-100-per" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4 class="line"><span>Q3.</span> 만족도 조사입니다.</h4>
+                                    <ul class="choice">
+                                        <li>
+                                            <span class="radiobox-default">
+                                                <input type="radio" id="m1" name="m1" checked /><label for="m1"><span></span> 아주 만족</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="radiobox-default">
+                                                <input type="radio" id="m2" name="m2" /><label for="m2"><span></span> 만족</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="radiobox-default">
+                                                <input type="radio" id="m3" name="m3" /><label for="m3"><span></span> 보통</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="radiobox-default">
+                                                <input type="radio" id="m4" name="m4" /><label for="m4"><span></span> 불만</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="radiobox-default">
+                                                <input type="radio" id="m5" name="m5" /><label for="m5"><span></span> 아주 불만족</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <div class="clearfix btn-area">
+                                <a href="#" class="list btn-normal gray">목록</a><a href="#" class="modify btn-normal blue">참여</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //설문 상세 및 참여 -->
+            </div>
+        </div>
+    </section>
+    <!-- //section -->
+
+    <!-- footer -->
+    <footer>
+        <span class="footer-logo"></span>
+        <p class="address">(우) 01359  서울특별시 종로구 종로 33<br />Tel : 02.3319.757~8</p>
+        <a href="#" class="go-top">Top</a>
+    </footer>
+    <!-- //footer -->
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.0.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/2.8.1/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/global.js"></script>
+<script src="../assets/js/custom.js"></script>
+</body>
+</html>
